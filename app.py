@@ -18,7 +18,7 @@ TWILIO_WHATSAPP_NUMBER = os.getenv("TWILIO_WHATSAPP_NUMBER")
 client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
 
 # ===== Public URL prefix for ngrok =====
-PUBLIC_URL_PREFIX = "https://whatsapp-chat-bot-owhs.onrender.com/images"
+PUBLIC_URL_PREFIX = "https://ourresume.onrender.com/images"
 
 # ===== Sample CV images served via Flask =====
 SAMPLE_CV_IMAGES = [
@@ -163,3 +163,4 @@ def webhook():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
+
