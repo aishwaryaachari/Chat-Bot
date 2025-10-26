@@ -10,15 +10,15 @@ log.setLevel(logging.ERROR)
 
 app = Flask(__name__)
 
-# ===== Twilio credentials =====
-TWILIO_ACCOUNT_SID = "AC5ca822d29c8225c43cc2c15c603f7498"
-TWILIO_AUTH_TOKEN = "b2a55fa0e5f23b63ff9b7344fd39cb09"
-TWILIO_WHATSAPP_NUMBER = "whatsapp:+14155238886"
+# ===== Twilio credentials from Environment Variables =====
+TWILIO_ACCOUNT_SID = os.getenv("TWILIO_ACCOUNT_SID")
+TWILIO_AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN")
+TWILIO_WHATSAPP_NUMBER = os.getenv("TWILIO_WHATSAPP_NUMBER")
 
 client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
 
 # ===== Public URL prefix for ngrok =====
-PUBLIC_URL_PREFIX = "https://propitious-ungenial-journee.ngrok-free.dev/images"
+PUBLIC_URL_PREFIX = "https://whatsapp-chat-bot-owhs.onrender.com/images"
 
 # ===== Sample CV images served via Flask =====
 SAMPLE_CV_IMAGES = [
