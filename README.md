@@ -18,18 +18,6 @@ Tech Used:
 • Flask
 • Twilio WhatsApp API
 
-Project Structure:
-Chat-Bot/
-│
-├── app.py                 → Main application
-├── requirements.txt       → Library dependencies
-└── images/                → CV images folder
-    ├── cv_1.png
-    ├── cv_2.png
-    ├── cv_3.png
-    ├── cv_4.png
-    └── cv_5.png
-
 How To Run:
 1. Clone the repository
    git clone https://github.com/aishwaryaachari/Chat-Bot.git
